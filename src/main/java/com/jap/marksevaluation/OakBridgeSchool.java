@@ -9,19 +9,23 @@ public class OakBridgeSchool {
         int[] rollNos = {102, 109, 101, 103, 104, 108, 110, 105, 106, 107};
         OakBridgeSchool oakBridgeSchool = new OakBridgeSchool();
         int[] result = oakBridgeSchool.calculateTotalMarks(math, science, english);
-        System.out.print("The total marks : ");
-        for (int j : result) {
-            System.out.print(j + " ");
+        System.out.print("The total marks :   ");
+        for (int i = 0; i < result.length; i++) {
+            int j = result[i];
+            System.out.print(j + "  ");
         }
         System.out.println();
+
         System.out.print("The average marks of each student : ");
 
         int[] averageMarksOfEachStudent = oakBridgeSchool.calculateTotalAverageMarksForEachStudent(result, 3);
-        for (int j : averageMarksOfEachStudent) {
+        for (int i = 0; i < averageMarksOfEachStudent.length; i++) {
+            int j = averageMarksOfEachStudent[i];
             System.out.print(j + " ");
         }
         System.out.println();
         System.out.print("The average science mark of each student : ");
+        //avg of science marks
         int averageScienceMark = oakBridgeSchool.calculateAverageScienceMarks(science);
 
         System.out.print(averageScienceMark);
